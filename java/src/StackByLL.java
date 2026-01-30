@@ -1,3 +1,5 @@
+import java.util.*;
+import java.util.Stack;
 public class StackByLL {
     static class Node{
         int data;
@@ -7,7 +9,7 @@ public class StackByLL {
             this.next = null;
         }
     }
-    static class Stack{
+    static class StackLL{
         static Node head = null;
 
         public static boolean isEmpty(){
@@ -42,7 +44,8 @@ public class StackByLL {
     }
 
     public static void main(String[] args) {
-        Stack s = new Stack();
+//        StackLL s = new StackLL();
+        Stack<Integer> s = new Stack<>();
         s.push(1);
         s.push(2);
         s.push(3);
