@@ -43,6 +43,7 @@ public class StackByLL {
         }
     }
 
+
     public static void main(String[] args) {
 //        StackLL s = new StackLL();
         Stack<Integer> s = new Stack<>();
@@ -53,5 +54,6 @@ public class StackByLL {
             System.out.println(s.peek());
             s.pop();
         }
+
     }
 }
