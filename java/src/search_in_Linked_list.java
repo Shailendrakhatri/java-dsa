@@ -1,5 +1,5 @@
 public class search_in_Linked_list {
-    public class Node {
+    public static class Node {
         int data ;
         Node next;
         public Node (int data){
@@ -203,7 +203,130 @@ public class search_in_Linked_list {
         return true;
     }
 
+    public static boolean isCycle(){
+        Node slow = head;
+        Node fast = head;
 
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast){
+                return true;//cycle exists
+            }
+        }
+        return false; //no cycle found
+    }
+
+    public static void removeCycle(){
+        //detect cycle
+        Node slow =head;
+        Node fast =head;
+        boolean cycle = false;
+        while (fast != null || fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast){
+                cycle = true;
+                break;
+            }
+        }
+        if (cycle == false){
+            return;
+        }
+        //find meeting point
+        slow = head;
+        Node prev = null;
+        while (slow!= fast){
+            prev = fast; //last node
+            slow = slow.next;
+            fast = fast.next;
+        }
+        //remove cycle
+        prev.next = null;
+    }
+    public Node getMid(Node head){
+        Node slow = head;
+        Node fast = head.next;
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;//mid node
+    }
+    public Node merge(Node head1 , Node head2){
+        Node meregedLL = new Node(-1);
+        Node temp = meregedLL;
+        while(head1 != null && head2 != null){
+            if(head1.data <= head2.data){
+                temp.next = head1;
+                head1 = head1.next;
+                temp = temp.next;
+            }else{
+                temp.next = head2;
+                head2 = head2.next;
+                temp = temp.next;
+            }
+        }
+        //leftover nodes
+        while (head1 != null){
+            temp.next = head1;
+            head1 = head1.next;
+            temp = temp.next;
+        }
+        while (head2 != null){
+            temp.next = head2;
+            head2 = head2.next;
+            temp = temp.next;
+        }
+        return meregedLL.next;
+    }
+
+    public Node mergeSort(Node head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        // find mid
+        Node mid = getMid(head);
+    // left and right ms
+        Node rightHead = mid.next;
+        mid.next = null ;
+        Node newLeft = mergeSort(head);
+        Node newRight = mergeSort(rightHead);
+    //return merged list
+        return merge(newLeft, newRight);
+
+    }
+
+    //to make zigzah pattern linked list
+    public void zigZag() {
+        // find mid
+        Node mid = getMid(head);
+        //rverse 2nd half
+
+        //merge 2 half in zigzag manner
+        Node curr = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node left = head;
+        Node right = prev;
+        Node nextL, nextR;
+        //zigzag merge
+        while (left != null && right != null) {
+            nextL = left.next;
+            left.next = right;
+            nextR = right.next;
+            right.next = nextL;
+            left = nextL;
+            right = nextR;
+        }
+    }
     // to print linked list
     public void printLL( Node head){
     if(head == null){
@@ -218,15 +341,15 @@ public class search_in_Linked_list {
         System.out.println("null");
     }
     public static void main(String args[]){
-        search_in_Linked_list ll = new search_in_Linked_list();
-//        ll.addFirst(1);
-//        ll.addFirst(2);
+//        search_in_Linked_list ll = new search_in_Linked_list();
+////        ll.addFirst(1);
+////        ll.addFirst(2);
 //        ll.addFirst(3);
-        ll.addLast(1);
-        ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(1);
-        ll.addLast(3);
+//        ll.addLast(1);
+//        ll.addLast(2);
+//        ll.addLast(2);
+//        ll.addLast(1);
+//        ll.addLast(3);
 //        ll.add(2, 9);
 //        //print linkedlist
 //        ll.printLL(head);
@@ -246,8 +369,33 @@ public class search_in_Linked_list {
 //        ll.printLL(head);
 //        ll.deleteNthFromEnd(2);
 //        ll.printLL(head);
-        ll.printLL(head);
-        System.out.println(ll.checkPalindrome());
+//        ll.printLL(head);
+//        head = new Node(1);
+//        Node temp = new Node(2);
+//        head.next = temp;
+//        head.next.next = new Node(3);
+//        head.next.next.next = temp;
+////        head.next.next.next = head;
+//        System.out.println(isCycle());
+//        removeCycle();
+//        System.out.println(isCycle());
+//
 
+//        System.out.println(ll.checkPalindrome());
+        search_in_Linked_list ll = new search_in_Linked_list();
+        ll.addLast(5);
+        ll.addLast(3);
+        ll.addLast(8);
+//        ll.addLast(1);
+        ll.addLast(4);
+        System.out.println("Original Linked List:");
+        ll.printLL(head);
+        head = ll.mergeSort(head);
+        System.out.println("Sorted Linked List:");
+        ll.printLL(head);
+        //zigzag
+        ll.zigZag();
+        System.out.println("ZigZag Linked List:");
+        ll.printLL(head);
     }
 }
