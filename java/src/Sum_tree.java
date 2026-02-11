@@ -11,7 +11,6 @@ public class Sum_tree {
             this.right = null;
         }
     }
-
     public static int  transform(Node root){
         if(root == null){
             return 0;
