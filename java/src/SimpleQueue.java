@@ -41,4 +41,16 @@ public class SimpleQueue {
     public boolean isEmpty() {
         return front == rear;
     }
+    public class Main {
+        public static void main(String[] args) {
+            SimpleQueue q = new SimpleQueue();
+
+            q.enqueue(5);
+            q.enqueue(15);
+            q.enqueue(25);
+
+            System.out.println(q.dequeue()); // 5
+            System.out.println(q.peek());    // 15
+        }
+    }
 }
