@@ -13,6 +13,8 @@ public class HashSet_Basics {
         cities.add("Chennai");
         cities.add("Kolkata");
         cities.add("Indore");
+        cities.add("Delhi");
+        cities.add("Mumbai");
 
         Iterator it = cities.iterator();
         while(it.hasNext()){
@@ -20,9 +22,9 @@ public class HashSet_Basics {
         }
 
         //by advanced for loop
-        for(String city : cities) {
-            System.out.println(city);
-        }
+//        for(String city : cities) {
+//            System.out.println(city);
+//        }
 
     }
 }
