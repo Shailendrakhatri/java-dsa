@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Check_Parentheses {
 
 
@@ -33,6 +34,8 @@ public class Check_Parentheses {
     public static void main(String[] args) {
         String str = "(){}[]()({}{}[[][]{}{}]()()()({}{}[][]){}{})";
         char ch[] = str.toCharArray();
+
+
         System.out.println(isvalid(ch));
     }
 
