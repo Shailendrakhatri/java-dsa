@@ -29,15 +29,15 @@ public class Deque_Basics {
     }
 
     public static void main(String[] args){
-//        java.util.Deque<Integer> deque = new java.util.LinkedList<>();
-//        deque.addFirst(10);
-//        deque.addLast(9);
-//        deque.addFirst(8);
-//        System.out.println(deque);
-//        deque.removeFirst();
-//        System.out.println(deque);
-//        deque.removeLast();
-//        System.out.println(deque);
+        java.util.Deque<Integer> deque = new java.util.LinkedList<>();
+        deque.addFirst(10);
+        deque.addLast(9);
+        deque.addFirst(8);
+        System.out.println(deque);
+        deque.removeFirst();
+        System.out.println(deque);
+        deque.removeLast();
+        System.out.println(deque);
 
         Stack s = new Stack();
         s.push(1);
