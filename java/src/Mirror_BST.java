@@ -40,6 +40,9 @@ public class Mirror_BST {
         root.left.left = new Node(3);
         root.left.right = new Node(6);
         root.right.right = new Node(11);
+        root.left.left.left = new Node(4);
+        root.left.left.right = new Node(7);
+
 
         root = createMirror(root);
         preorder(root);
