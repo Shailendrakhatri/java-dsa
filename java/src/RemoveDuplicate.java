@@ -9,7 +9,6 @@ public class RemoveDuplicate {
         for (char c : str.toCharArray()) {
             set.add(c);
         }
-
         for (char c : set) {
             System.out.print(c);
         }
