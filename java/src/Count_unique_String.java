@@ -49,6 +49,8 @@ public class Count_unique_String {
         }
         Node curr = root;
         root.freq = -1;
+
+
         System.out.println(countUnique(curr));
     }
 }
