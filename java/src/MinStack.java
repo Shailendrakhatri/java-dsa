@@ -16,6 +16,8 @@ public class MinStack {
         }
     }
 
+
+
     public void pop() {
         if (stack.isEmpty()) return;
         int top = stack.pop();
