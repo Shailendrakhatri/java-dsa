@@ -23,6 +23,7 @@ public class BellmanFord_Algorithm {
         graph[2].add(new Edge(2, 3, 2));
         graph[3].add(new Edge(3, 4, 4));
         graph[4].add(new Edge(4, 1, -1));
+
     }
 
     public static void bellmanFord(ArrayList<Edge> graph[], int src, int V){

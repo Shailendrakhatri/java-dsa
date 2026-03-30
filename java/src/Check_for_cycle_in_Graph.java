@@ -38,11 +38,15 @@ public class Check_for_cycle_in_Graph {
                 return true;
             } else if(!vis[e.dest] && isCycleDirected(graph, vis, e.dest, rec)){
                 return true;
+
             }
         }
         rec[curr] = false;
         return false;
     }
+
+
+
     public static void main(String[] args) {
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
