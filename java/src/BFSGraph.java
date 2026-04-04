@@ -12,11 +12,14 @@ public class BFSGraph {
         g.get(1).add(3);
         g.get(2).add(3);
 
+
+
         boolean v[] = new boolean[4];
         Queue<Integer> q = new LinkedList<>();
 
         q.add(0);
         v[0] = true;
+
 
         while(!q.isEmpty()){
             int n = q.poll();
