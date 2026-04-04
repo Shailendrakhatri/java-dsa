@@ -12,11 +12,14 @@ public static void changedArr(int arr[], int i, int val){
     arr[i] = arr[i]-2;
 }
 
+
 public static void printArr(int arr[]){
     for(int i=0;i<arr.length;i++){
         System.out.print(arr[i]+ " ");
     }
 }
+
+
     public static void main(String args[]){
     int arr[] =new int[5];
     changedArr(arr,0,1);
