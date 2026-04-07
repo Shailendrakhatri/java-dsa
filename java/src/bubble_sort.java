@@ -8,6 +8,8 @@ public class bubble_sort {
                     arr[j+1]=temp;
                 }
             }
+
+
         }
     }
 
@@ -17,6 +19,7 @@ public class bubble_sort {
         }
         System.out.println();
     }
+
 
 
     public static void main(String[] args) {
