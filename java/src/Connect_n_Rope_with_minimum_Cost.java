@@ -6,15 +6,20 @@ public class Connect_n_Rope_with_minimum_Cost {
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for(int i = 0; i < ropes.length; i++){
-            pq.add(ropes[i]);
+                pq.add(ropes[i]);
         }
+
+
         int cost = 0;
-        while(pq.size() > 1) {
+
+            while(pq.size() > 1) {
+
             int first = pq.remove();
             int second = pq.remove();
             cost += first + second;
             pq.add(first + second);
         }
+
         System.out.println("Minimum cost to connect ropes is " + cost);
 
     }
