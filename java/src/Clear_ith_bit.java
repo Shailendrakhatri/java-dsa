@@ -5,7 +5,10 @@ public class Clear_ith_bit {
 
     }
 
+
+
     public static void main(String[] args) {
+
         System.out.println(clearithbit(10,1));
     }
 }
