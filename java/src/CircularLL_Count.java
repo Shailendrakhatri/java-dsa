@@ -7,10 +7,12 @@ class CircularLL_Count {
         Node(int d) { data = d; }
     }
 
+
     static Node head = null;
 
     static void insert(int d) {
         Node newNode = new Node(d);
+
         if (head == null) {
             head = newNode;
             head.next = head;
