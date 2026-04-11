@@ -16,14 +16,11 @@ public class Union_and_InterSection {
         for(int i = 0; i < arr2.length; i++){
             set.add(arr2[i]);
         }
-
         System.out.println("Union of two arrays is " + set.size());
         for(Integer i : set){
             System.out.print(i + " ");
         }
         System.out.println();
-
-
         // intersection
         set.clear();
         for(int i = 0; i < arr1.length; i++){
