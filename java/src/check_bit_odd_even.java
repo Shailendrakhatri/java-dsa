@@ -6,7 +6,6 @@ public class check_bit_odd_even {
         }else{
             System.out.println("odd number");
         }
-
     }
     public static void main(String[] args) {
         odd_even(24);
