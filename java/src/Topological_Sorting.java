@@ -21,7 +21,6 @@ public class Topological_Sorting {
         graph[2].add(new Edge(2, 3));
         graph[2].add(new Edge(3, 0));
     }
-
     public static void  topSortUtil(ArrayList<Edge> graph[], int curr, boolean vis[], Stack<Integer> s){
         vis[curr] = true;
         for(int i = 0; i< graph[curr].size(); i++){
