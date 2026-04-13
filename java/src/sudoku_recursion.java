@@ -13,7 +13,7 @@ public class sudoku_recursion {
                 return false;
             }
         }
-//        girid
+//girid
         int sr = (row/3)*3;
         int sc = (col/3)*3;
 
@@ -31,14 +31,12 @@ public class sudoku_recursion {
          if (row == 9 && col == 0) {
              return true;
          }
-
          //
          int nextRow = row, nextCol = col + 1;
          if (col + 1 == 9) {
              nextRow = row + 1;
              nextCol = 0;
          }
-
          if (sudoku[row][col] != 0) {
             return sudoku_solver(sudoku, nextRow, nextCol);
          }
@@ -63,9 +61,6 @@ public class sudoku_recursion {
             System.out.println();
         }
      }
-
-
-
     public static void main(String args[]) {
         int sudoku[][] = {
                 {0, 0, 8, 0, 0, 0, 0, 0, 0},
