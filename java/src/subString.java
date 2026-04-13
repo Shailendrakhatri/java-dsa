@@ -7,7 +7,6 @@ public class subString {
             substr +=str.charAt(i);
         }
         return substr;
-
     }
     public static void main(String[] args) {
         String str= "hello world";
