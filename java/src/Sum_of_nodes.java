@@ -11,17 +11,18 @@ public class Sum_of_nodes {
             this.right = null;
         }
     }
-
     public static int sum(Node root ){
         if(root == null) {
             return 0;
         }
+
         int lsum  = sum(root.left);
         int rsum = sum(root.right);
         return lsum+rsum+ root.data;
 
     }
     public static void main(String args[]){
+
 
         Node root = new Node(1);
         root.left = new Node(2);
