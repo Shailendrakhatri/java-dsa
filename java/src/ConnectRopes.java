@@ -13,13 +13,10 @@ public class ConnectRopes {
         while (pq.size() > 1) {
             int a = pq.poll();
             int b = pq.poll();
-
             int sum = a + b;
             cost += sum;
-
             pq.offer(sum);
         }
-
         return cost;
     }
 }
