@@ -9,10 +9,8 @@ class CircularLL_Count {
 
 
     static Node head = null;
-
     static void insert(int d) {
         Node newNode = new Node(d);
-
         if (head == null) {
             head = newNode;
             head.next = head;
@@ -24,7 +22,6 @@ class CircularLL_Count {
         temp.next = newNode;
         newNode.next = head;
     }
-
     static int count() {
         int cnt = 0;
         Node temp = head;
@@ -34,7 +31,6 @@ class CircularLL_Count {
         } while (temp != head);
         return cnt;
     }
-
     public static void main(String[] args) {
         insert(1);
         insert(2);
