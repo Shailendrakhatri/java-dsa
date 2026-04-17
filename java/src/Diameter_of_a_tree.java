@@ -19,7 +19,6 @@ public class Diameter_of_a_tree {
         int lh  = height(root.left);
         int rh = height(root.right);
         return Math.max(lh, rh)+1;
-
     }
     public static int diameter(Node root) {
         if(root == null){
@@ -32,8 +31,6 @@ public class Diameter_of_a_tree {
 
         int selfDiam = leftHt + rightHt +1;
         return Math.max(selfDiam, Math.max(leftDiam, rightDiam));
-
-
     }
     static class Info{
         int diam;
