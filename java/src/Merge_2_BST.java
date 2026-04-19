@@ -12,6 +12,7 @@ public class Merge_2_BST {
             this.right = null;
         }
     }
+
     public static void getInorder(Node root, ArrayList<Integer> arr){
         if(root == null){
             return;
@@ -20,7 +21,6 @@ public class Merge_2_BST {
         arr.add(root.data);
         getInorder(root.right, arr);
     }
-
     public static Node createBst(ArrayList<Integer> arr, int start, int end){
         if(start > end){
             return null;
