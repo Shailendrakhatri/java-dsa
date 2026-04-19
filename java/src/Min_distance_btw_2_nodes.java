@@ -57,11 +57,11 @@ public class Min_distance_btw_2_nodes {
 
             return  dist1+ dist2;
     }
+
     public static int KAncestor(Node root , int n , int k){
             if(root == null){
                 return -1;
             }
-
             if(root.data == n){
                 return 0;
             }
