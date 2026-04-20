@@ -16,7 +16,6 @@ public class Lemonade_Change {
                 five--;
                 ten++;
             }
-
             else { // 20
                 if (ten > 0 && five > 0) {
                     ten--;
