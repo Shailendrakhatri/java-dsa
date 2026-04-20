@@ -21,8 +21,8 @@ public class CommonElements {
                 System.out.println("Common element found: " + num);
                 return;
             }
-        }
 
+        }
         System.out.println("No common element");
     }
 }
