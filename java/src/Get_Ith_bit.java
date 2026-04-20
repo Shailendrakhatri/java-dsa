@@ -9,7 +9,8 @@ public class Get_Ith_bit {
         }
     }
     public static void main(String args[]){
-       System.out.println( getithbit(10,3));
+
+        System.out.println( getithbit(10,3));
     }
 
 }
