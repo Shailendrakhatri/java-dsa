@@ -13,6 +13,7 @@ public class StringUpperCase {
            }
        }
        return sb.toString();
+
     }
     public static void main(String[] args) {
         String str = "hello it's me professor";
