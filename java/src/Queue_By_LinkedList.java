@@ -23,6 +23,7 @@ public class Queue_By_LinkedList {
             tail.next = newNode;
             tail = newNode;
         }
+
         //dequeue
         public static int remove(){
             if(isEmpty()){
@@ -38,6 +39,7 @@ public class Queue_By_LinkedList {
             }
             return front;
         }
+
         //peek
         public static int peek() {
             if (isEmpty()) {
