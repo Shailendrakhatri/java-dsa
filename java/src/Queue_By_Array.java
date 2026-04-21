@@ -39,6 +39,7 @@ public class Queue_By_Array {
             rear = (rear+1) % size;
             arr[rear] = data;
         }
+
         // to remove
 //        public static int remove(){
 //            if(isEmpty()){
@@ -70,6 +71,7 @@ public class Queue_By_Array {
             }
                 return result;
         }
+
         //peek ;
         public static int peek(){
             if(isEmpty()) {
