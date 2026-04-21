@@ -6,12 +6,10 @@ public class Print_root_to_laef_Path { static class Node {
     int data;
     Node left;
     Node right;
-
     Node (int data){
         this.data = data;
         this.left = null;
         this.right = null;
-
     }
 }
     public static void inorder(Node root){
@@ -36,7 +34,6 @@ public class Print_root_to_laef_Path { static class Node {
         }
         return root;
     }
-
     public static void printRoot2leaf(Node root, ArrayList<Integer> path){
         if(root == null){
             return;
