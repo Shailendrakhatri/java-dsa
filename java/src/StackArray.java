@@ -18,7 +18,6 @@ public class StackArray {
         }
         stack[++top] = x;
     }
-
     int pop() {
         if (top == -1) {
             System.out.println("Stack Underflow");
@@ -26,7 +25,6 @@ public class StackArray {
         }
         return stack[top--];
     }
-
     int peek() {
         if (top == -1) return -1;
         return stack[top];
