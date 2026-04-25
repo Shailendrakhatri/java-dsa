@@ -49,7 +49,6 @@ public class Min_distance_btw_2_nodes {
                 return leftDist+1;
             }
     }
-
     public static int minDist(Node root, int n1, int n2){
             Node lca2 = lca2(root, n1,n2);
             int dist1 = lcaDist(lca2, n1);
@@ -57,7 +56,6 @@ public class Min_distance_btw_2_nodes {
 
             return  dist1+ dist2;
     }
-
     public static int KAncestor(Node root , int n , int k){
             if(root == null){
                 return -1;
