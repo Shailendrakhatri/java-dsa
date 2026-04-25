@@ -12,7 +12,6 @@ public class Trie_basics {
                 children[i] = null;
             }
         }
-
     }
     public static Node root = new Node();
 
