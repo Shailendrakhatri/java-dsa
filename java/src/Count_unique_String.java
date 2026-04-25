@@ -40,6 +40,7 @@ public class Count_unique_String {
                 count += countUnique(root.children[i]);
             }
         }
+
         return count;
     }
     public static void main(String args[]){
