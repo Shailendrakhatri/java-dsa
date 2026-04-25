@@ -15,6 +15,7 @@ public class StringCmpression {
             }
         }return newstr;
     }
+
     public static void main(String[] args) {
         String str = "aaabbccccdeee";
         System.out.println(compression(str));
