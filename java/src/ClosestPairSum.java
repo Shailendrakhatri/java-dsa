@@ -24,10 +24,8 @@ public class ClosestPairSum {
                 right--;
             }
         }
-
         return closest;
     }
-
     public static void main(String[] args) {
 
         int[] arr = {1,4,7,10};
