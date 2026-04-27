@@ -12,6 +12,7 @@ public class Prefix_problem_using_tries {
             freq = 1;
         }
     }
+
     public static Node root = new Node();
 
     public static void insert(String word){
