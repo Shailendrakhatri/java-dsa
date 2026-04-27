@@ -9,6 +9,8 @@ public class Queue_Reversal {
             q.add(s.pop());
         }
     }
+
+
     public static void main(String args[]){
         java.util.Queue q = new java.util.LinkedList();
             q.add(1);
