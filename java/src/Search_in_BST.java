@@ -10,7 +10,6 @@ public class Search_in_BST {
             this.data = data;
             this.left = null;
             this.right = null;
-
         }
     }
     public static void inorder(Node root){
