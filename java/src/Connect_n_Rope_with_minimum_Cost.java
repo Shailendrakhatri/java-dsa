@@ -8,8 +8,6 @@ public class Connect_n_Rope_with_minimum_Cost {
         for(int i = 0; i < ropes.length; i++){
                 pq.add(ropes[i]);
         }
-
-
         int cost = 0;
 
             while(pq.size() > 1) {
