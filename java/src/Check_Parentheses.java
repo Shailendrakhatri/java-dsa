@@ -24,7 +24,6 @@ public class Check_Parentheses {
                 }
             }
         }
-
         if(s.isEmpty()){
             return true;
         }else {
