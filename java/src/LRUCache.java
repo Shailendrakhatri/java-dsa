@@ -11,7 +11,6 @@ public class LRUCache {
         map = new HashMap<>();
         dq = new LinkedList<>();
     }
-
     public int get(int key) {
         if (!map.containsKey(key)) return -1;
 
@@ -19,7 +18,6 @@ public class LRUCache {
         dq.addFirst(key);
         return map.get(key);
     }
-
     public void put(int key, int value) {
         if (map.containsKey(key)) {
             dq.remove(key);
