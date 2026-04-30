@@ -27,7 +27,6 @@ public class ClosestPairSum {
         return closest;
     }
     public static void main(String[] args) {
-
         int[] arr = {1,4,7,10};
 
         System.out.println(closestSum(arr, 15));
