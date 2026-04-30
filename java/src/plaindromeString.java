@@ -8,9 +8,6 @@ public class plaindromeString {
     }
     return true;
     }
-
-
-
     public static void main(String[] args) {
         String str= "racecar";
         findpalindromeOrnot(str);
