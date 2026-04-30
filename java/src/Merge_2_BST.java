@@ -25,13 +25,13 @@ public class Merge_2_BST {
         if(start > end){
             return null;
         }
+
         int mid = (start + end)/2;
         Node root = new Node(arr.get(mid));
         root.left = createBst(arr, start, mid-1);
         root.right = createBst(arr, mid+1, end);
         return root; }
     public static Node mergeBST(Node root1, Node root2) {
-
         ArrayList<Integer> arr1 = new ArrayList<>();
         getInorder(root1, arr1);
         ArrayList<Integer> arr2 = new ArrayList<>();
