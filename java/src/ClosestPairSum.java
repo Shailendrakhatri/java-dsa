@@ -17,7 +17,6 @@ public class ClosestPairSum {
             if(Math.abs(target - sum) < Math.abs(target - closest)) {
                 closest = sum;
             }
-
             if(sum < target) {
                 left++;
             } else {
@@ -28,7 +27,6 @@ public class ClosestPairSum {
     }
     public static void main(String[] args) {
         int[] arr = {1,4,7,10};
-
         System.out.println(closestSum(arr, 15));
     }
 }
