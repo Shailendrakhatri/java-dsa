@@ -26,6 +26,8 @@ public class Chocola_problem_by_greedy {
                 v++;
             }
         }
+
+
         while(h < costHor.length){
             cost += (costHor[h] *vp);
             hp++;
