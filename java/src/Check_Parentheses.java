@@ -30,6 +30,7 @@ public class Check_Parentheses {
             return false;
         }
     }
+
     public static void main(String[] args) {
         String str = "(){}[]()({}{}[[][]{}{}]()()()({}{}[][]){}{})";
         char ch[] = str.toCharArray();
