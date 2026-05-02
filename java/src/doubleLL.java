@@ -95,7 +95,6 @@ public class doubleLL {
         }
         System.out.println("null");
     }
-
     public static void main(String[] args){
         doubleLL ll = new doubleLL();
         ll.addFirst(1);
