@@ -9,7 +9,6 @@ public class duplicate_characters_in_a_string {
         for(char c : str.toCharArray()){
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-
         for(Map.Entry<Character, Integer> entry : map.entrySet()){
             if(entry.getValue() > 1){
                 System.out.println(entry.getKey());

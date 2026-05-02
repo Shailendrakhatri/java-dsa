@@ -16,6 +16,7 @@ public class minimum_absolute_difference_by_greedy {
         for(int i=0; i<total.size(); i++){
             sum += total.get(i);
         }
+
         System.out.println("the minimum absolute  sum is = " + sum );
         // using simple  method (using exyra vairable to save minimum )
 //        int absDiff = 0;
