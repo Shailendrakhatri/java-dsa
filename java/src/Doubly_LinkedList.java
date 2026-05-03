@@ -14,7 +14,6 @@ public class Doubly_LinkedList {
             this.next = null;
         }
     }
-
     // Queue using Doubly Linked List
     static class QueueDLL {
         private DoublyNode front, rear;
