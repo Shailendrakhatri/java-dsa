@@ -22,8 +22,10 @@ public class Check_subtree_of_other_tree {
         if(!isIdentical(node.right, subRoot.right)){
             return false;
         }
+
         return true;
     }
+
     public static boolean  isSubtree(Node root, Node subRoot){
         if(root == null ){
             return false;
