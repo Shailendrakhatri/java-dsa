@@ -12,8 +12,8 @@ public class BellmanFord_Algorithm {
             this.wt = w;
         }
     }
-    public static void createGraph(ArrayList<Edge> graph[]){
-        for(int i = 0; i< graph.length; i++){
+    public static void createGraph(ArrayList<Edge> graph[]) {
+        for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<Edge>();
         }
 
@@ -23,7 +23,6 @@ public class BellmanFord_Algorithm {
         graph[2].add(new Edge(2, 3, 2));
         graph[3].add(new Edge(3, 4, 4));
         graph[4].add(new Edge(4, 1, -1));
-
     }
 
     public static void bellmanFord(ArrayList<Edge> graph[], int src, int V){
