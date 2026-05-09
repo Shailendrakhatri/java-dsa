@@ -11,6 +11,7 @@ public class First_Non_Repeating_Char {
             while(!q.isEmpty() && freq[q.peek()-'a']  > 1){
                 q.remove();
             }
+
             if(q.isEmpty()) {
                 System.out.print(-1+" ");
             }else {
@@ -19,6 +20,7 @@ public class First_Non_Repeating_Char {
         }
         System.out.println();
     }
+
     public static void main(String args[]){
         String str = "aabccxb";
         PrintNonRepeating(str);
