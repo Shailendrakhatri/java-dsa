@@ -3,7 +3,7 @@ public class bit_wise {
         //binary AND
         System.out.println(5 & 6);
         //binary OR
-        System.out.println(5|6)
+        System.out.println(5|6);
         //binary XOR
         System.out.println(5^6);
         //binary 1's complement
