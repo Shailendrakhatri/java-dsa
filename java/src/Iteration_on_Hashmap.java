@@ -10,9 +10,7 @@ public class Iteration_on_Hashmap {
         hm.put("Russia", 20);
         hm.put("Japan", 10);
         hm.put("Nepal", 5);
-
         // to irerate on hashmap we can use keySet() function which will return a set of keys in the hashmap
-
         Set<String> keys = hm.keySet();
         System.out.println(keys);
         for(String k :  keys){
