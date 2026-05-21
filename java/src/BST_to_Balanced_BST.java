@@ -20,6 +20,7 @@ public class BST_to_Balanced_BST {
         System.out.print(root.data + " ");
         inorder(root.right);
     }
+
     public static void preorder(Node root){
         if(root == null){
             return;
@@ -28,6 +29,7 @@ public class BST_to_Balanced_BST {
         preorder(root.left);
         preorder(root.right);
     }
+
     public static void postorder(Node root){
         if(root == null){
             return;
