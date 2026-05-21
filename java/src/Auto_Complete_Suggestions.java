@@ -6,9 +6,7 @@ public class Auto_Complete_Suggestions {
         Node[] children = new Node[26];
         boolean isEnd;
     }
-
     Node root = new Node();
-
     public void insert(String word) {
         Node curr = root;
         for (char ch : word.toCharArray()) {
