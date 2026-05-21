@@ -9,6 +9,7 @@ public class CharFrequency {
         for (char c : str.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
+
         System.out.println(map);
     }
 }
