@@ -4,9 +4,6 @@ public class Clear_ith_bit {
         return n & bitmask;
 
     }
-
-
-
     public static void main(String[] args) {
 
         System.out.println(clearithbit(10,1));
