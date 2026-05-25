@@ -21,6 +21,7 @@ public class Count_Distinct_Substrings {
             }
         }
     }
+
     public static void main(String[] args) {
         String s = "ababa";
         insertSuffix(s);
