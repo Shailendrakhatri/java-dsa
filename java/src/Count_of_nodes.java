@@ -11,7 +11,6 @@ public class Count_of_nodes {
             this.right = null;
         }
     }
-
     public static int count(Node root){
         if(root == null) {
             return 0;
@@ -19,7 +18,6 @@ public class Count_of_nodes {
         int lcount  = count(root.left);
         int rcount = count(root.right);
         return lcount+rcount+1;
-
     }
     public static void main(String args[]){
 
