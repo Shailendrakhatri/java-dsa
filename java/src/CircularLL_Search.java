@@ -7,7 +7,6 @@ public class CircularLL_Search {
             Node next;
             Node(int d) { data = d; }
         }
-
         static Node head = null;
         static void insert(int d) {
             Node newNode = new Node(d);
