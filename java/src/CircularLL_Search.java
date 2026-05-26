@@ -22,7 +22,6 @@ public class CircularLL_Search {
             temp.next = newNode;
             newNode.next = head;
         }
-
         static boolean search(int key) {
             Node temp = head;
             do {
@@ -32,7 +31,6 @@ public class CircularLL_Search {
             } while (temp != head);
             return false;
         }
-
         public static void main(String[] args) {
             insert(5);
             insert(15);
